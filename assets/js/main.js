@@ -48,7 +48,6 @@
       e.stopImmediatePropagation();
     });
   });
-
   
    /**
    * Preloader

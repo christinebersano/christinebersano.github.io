@@ -1884,7 +1884,7 @@ h2.hero-name {
 /* About Section Image Styling */
 #about .img-fluid {
   border: 2px solid transparent;
-  margin-top: 130px;
+  margin-top: 120px;
   border-radius: 10px; /* Smooth corners */
   /* box-shadow: 0 0 15px #7A1CAC; Slightly stronger glow */
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for both transform and glow */
@@ -2519,6 +2519,9 @@ h2.hero-name {
   opacity: 1;
   bottom: 0;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -3284,7 +3287,7 @@ body {
 
 #about
 {
-  margin-top: -10px;
+  margin-top: -50px;
 }
 
 .interests {
@@ -3301,15 +3304,15 @@ body {
 }
 
 #portfolio {
-  margin-top: -60px;
+  margin-top: -20px;
 }
 
 #portfolio-details {
-  margin-top: -40px;
+  margin-top: -80px;
 }
 
 #gallery {
-  margin-top: -70px;
+  margin-top: -100px;
 }
 
 #tools-tech {
@@ -3499,13 +3502,18 @@ body {
 
 
 /* Style for the text inside the <u> tag with linear gradient underline */
+h3 u {
+  text-decoration: none; /* Remove the default underline */
+  position: relative; /* Ensure positioning for the pseudo-element */
+}
+
 h3 u span.typed {
   color: #7A1CAC; /* Set text color to violet */
   font-weight: bold; /* Make text bold */
   font-size: 2rem; /* Default font size */
   position: relative; /* Ensure positioning for the pseudo-element */
   display: inline-block; /* Ensure correct behavior for the underline effect */
-  padding-bottom: 5px; /* Space between text and underline */
+  padding-bottom: 2px; /* Space between text and underline */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -3963,6 +3971,7 @@ h3 u span.typed {
   overflow: hidden; /* Ensure content stays within card */
   width: 100%;
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  background-color: var(--surface-color);
 }
 
 .portfolio-details .card img {
@@ -4174,3 +4183,166 @@ strong {
 
 
 
+
+#gallery {
+  margin-top: -100px;
+}
+
+
+
+
+.skills-section {
+  padding: 50px;
+  margin-top: -60px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; /* Adjust gap between cards */
+}
+
+.skill-card {
+  border-radius: 8px;
+  padding: 15px; /* Reduced padding */
+  width: 180px; /* Card width */
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid #7A1CAC; /* Violet border */
+  background-color: var(--surface-color);
+  color: #EDEDED; /* Light text color for contrast */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  border-color: #9D50BB; /* Lighter violet on hover */
+}
+
+.skill-card h3 {
+  font-size: 18px; /* Font size for card titles */
+  font-weight: 600;
+  color: #9D50BB; /* Light violet for titles */
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  font-size: 14px; /* Font size for card content */
+  color: #EDEDED; /* Light text for contrast */
+  line-height: 1.4;
+}
+
+/* Icon Styling */
+.skill-card i {
+  font-size: 30px; /* Size of the icon */
+  color: #7A1CAC; /* Primary violet color */
+  margin-bottom: 10px; /* Space between icon and title */
+  transition: color 0.3s ease;
+}
+
+.skill-card:hover i {
+  color: #9D50BB; /* Lighter violet color on hover */
+}
+
+/* Media query for tablet and smaller screens */
+@media (max-width: 768px) {
+  .skills-container {
+    justify-content: center;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 100%; /* Take full width of the column */
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr); /* Switch to 1 column */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* 
+.card{
+  border: 1px solid #7A1CAC; 
+  border-radius: 10px; 
+  padding: 20px; 
+  margin-bottom: -50px;
+} */
+
+
+
+.portfolio-details h2 {
+  color: #7A1CAC;
+  font-size: 1.5rem;
+}
+
+
+.chic-nails {
+  color: #7A1CAC;
+}
+
+
+.tech-icon {
+  margin-left: 5px; /* Space between the text and the icon */
+  font-size: 42px; /* Increase the size of the icon */
+  color: #7A1CAC; /* Violet color */
+  vertical-align: middle; /* Aligns the icon vertically with the text */
+}
+
+/* Font Awesome icon */
+.tech-icon::before {
+  content: "\f013"; /* Unicode for the 'cogs' icon */
+  font-family: 'Font Awesome 5 Free'; /* Ensure this is loaded in your project */
+  font-weight: 900; /* Required for solid icons */
+}
+
+
+.rating-icon {
+  margin-left: 10px; /* Space between the text and the icon */
+  font-size: 36px; /* Icon size */
+  color: #7A1CAC; /* Violet color to match the theme */
+  vertical-align: middle; /* Aligns the icon vertically with the text */
+}
+
+
+
+.rating-icon {
+  margin-left: 10px; /* Space between the text and the icon */
+  font-size: 40px; /* Icon size */
+  color: #7A1CAC; /* Violet color to match your theme */
+}
+
+
+
+.bi-search-heart-fill {
+  margin-left: 10px; /* Space between the text and the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  color: #7A1CAC; /* A vibrant pinkish color */
+}
+
+
+.service-icon {
+  margin-left: 10px; /* Space between the text and the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  color: #7A1CAC; /* A vibrant pinkish color */
+}
+
+
+.works-icon {
+  margin-left: 10px; /* Space between the text and the icon */
+  font-size: 40px; /* Adjust the size of the icon */
+  color: #7A1CAC; /* A vibrant pinkish color */
+}
