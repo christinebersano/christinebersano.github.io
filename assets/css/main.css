@@ -4346,3 +4346,22 @@ strong {
   font-size: 40px; /* Adjust the size of the icon */
   color: #7A1CAC; /* A vibrant pinkish color */
 }
+
+
+
+
+/* Style for Swiper images */
+.swiper-wrapper img {
+  width: 80%; /* Set to 80% of the container width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Optional: Add some spacing around images */
+.swiper-slide {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 10px; /* Add some padding if needed */
+}
